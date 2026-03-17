@@ -5,33 +5,40 @@ const events = [
   {
     year: '2024',
     title: 'Started Web Development',
-    desc: 'Began my coding journey with HTML, CSS, and JavaScript. Built foundational projects and developed a strong understanding of how the web works.',
+    desc: 'Began learning HTML, CSS, and JavaScript. Built small projects to understand core web development concepts, DOM manipulation, and responsive design.',
     accent: '#7c3aed',
   },
   {
     year: '2024',
-    title: 'Building Real Projects',
-    desc: 'Created projects like MiniTube and a Retail Price Comparison Bot, gaining hands-on experience with APIs, backend logic, and real-world problem solving.',
+    title: 'JavaScript Projects',
+    desc: 'Developed projects like Tic-Tac-Toe, Music Player, and Weather App, strengthening JavaScript logic, UI design, and frontend development fundamentals.',
     accent: '#3b82f6',
   },
   {
     year: '2025',
-    title: 'Backend & Automation',
-    desc: 'Developed Telegram Cloud Vault using Telegram Bot API for cloud storage, improving backend development and automation skills.',
+    title: 'MERN Stack Development',
+    desc: 'Learned MongoDB, Express.js, React.js, and Node.js. Built full-stack applications with authentication, REST APIs, and structured backend architecture.',
     accent: '#10b981',
   },
   {
     year: '2025',
-    title: 'Full-Stack Development',
-    desc: 'Built SmartCampus ERP using MERN stack with features like role-based access, student management, and scalable backend architecture.',
+    title: 'Backend & API Development',
+    desc: 'Focused on backend systems including JWT authentication, database schema design, API security, and scalable server-side architecture.',
     accent: '#f97316',
   },
   {
+    year: '2025',
+    title: 'Full Stack Projects',
+    desc: 'Built real-world applications like MiniTube and SmartCampus ERP with role-based authentication, attendance systems, result management, and cloud storage integration.',
+    accent: '#6366f1',
+  },
+  {
     year: '2026',
-    title: 'Current Focus',
-    desc: 'Exploring Next.js, Redis, AI integrations, and cloud platforms to build scalable, high-performance full-stack applications.',
+    title: 'Advanced Backend & Real-Time Systems',
+    desc: 'Exploring Socket.IO, real-time communication, scalable backend systems, payment integration, and building production-ready MERN applications.',
     accent: '#ec4899',
   },
+
 ];
 
 function TimelineItem({ event, index }) {
@@ -50,7 +57,7 @@ function TimelineItem({ event, index }) {
     >
       {/* Dot */}
       <div
-        className="hidden md:block absolute top-6 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full z-10"
+        className="absolute z-10 hidden w-3 h-3 -translate-x-1/2 rounded-full md:block top-6 left-1/2"
         style={{
           background: event.accent,
           boxShadow: `0 0 12px ${event.accent}80`,
@@ -62,13 +69,13 @@ function TimelineItem({ event, index }) {
         style={{ borderColor: `${event.accent}25` }}
       >
         <span
-          className="text-xs font-bold tracking-widest uppercase mb-2 block"
+          className="block mb-2 text-xs font-bold tracking-widest uppercase"
           style={{ color: event.accent }}
         >
           {event.year}
         </span>
-        <h3 className="text-white font-semibold text-lg mb-2">{event.title}</h3>
-        <p className="text-white/50 text-sm leading-relaxed">{event.desc}</p>
+        <h3 className="mb-2 text-lg font-semibold text-white">{event.title}</h3>
+        <p className="text-sm leading-relaxed text-white/50">{event.desc}</p>
       </div>
     </motion.div>
   );
@@ -86,7 +93,7 @@ export default function Experience() {
   const titleInView = useInView(titleRef, { once: true });
 
   return (
-    <section id="experience" className="relative py-32 px-6 overflow-hidden">
+    <section id="experience" className="relative px-6 py-32 overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-violet-600/5 blur-3xl rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto">
@@ -95,12 +102,12 @@ export default function Experience() {
           initial={{ opacity: 0, y: 40 }}
           animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center mb-20"
+          className="mb-20 text-center"
         >
           <p className="text-xs tracking-[0.35em] uppercase text-violet-400 mb-4 font-medium">
             Journey
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-white md:text-5xl">
             My <span className="text-gradient">Experience</span>
           </h2>
         </motion.div>
@@ -110,7 +117,7 @@ export default function Experience() {
           {/* Center vertical line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/[0.06] -translate-x-1/2">
             <motion.div
-              className="w-full bg-gradient-to-b from-violet-500 to-blue-500 origin-top"
+              className="w-full origin-top bg-gradient-to-b from-violet-500 to-blue-500"
               style={{ height: lineHeight }}
             />
           </div>
