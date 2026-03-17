@@ -3,6 +3,7 @@ import Contact from './components/Contact'
 import Cursor from './components/Cursor'
 import Experience from './components/Experience'
 import Footer from './components/Footer'
+import GitHub from './components/GitHub'
 import Navbar from './components/Navbar'
 import Overlay from './components/Overlay'
 import Projects from './components/Projects'
@@ -32,6 +33,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <GitHub />
         <Experience />
         <Contact />
       </main>
