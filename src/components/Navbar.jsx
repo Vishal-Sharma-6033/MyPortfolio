@@ -58,12 +58,21 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <a
-          href="mailto:vishalsharma952877@gmail.com"
-          className="hidden md:inline-flex items-center gap-2 text-sm px-4 py-2 rounded-full border border-white/10 text-white/60 hover:text-white hover:border-violet-500/50 transition-all duration-300 cursor-none"
-        >
-          Hire Me
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center gap-2 text-sm px-4 py-2 rounded-full border border-white/10 text-white/60 hover:text-white hover:border-blue-500/50 transition-all duration-300 cursor-none"
+          >
+            Download Resume
+          </a>
+          <a
+            href="mailto:vishalsharma952877@gmail.com"
+            className="inline-flex items-center gap-2 text-sm px-4 py-2 rounded-full border border-white/10 text-white/60 hover:text-white hover:border-violet-500/50 transition-all duration-300 cursor-none"
+          >
+            Hire Me
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -109,6 +118,27 @@ export default function Navbar() {
                 {link.label}
               </motion.a>
             ))}
+            <motion.a
+              href="/resume.pdf"
+              download
+              onClick={() => setMenuOpen(false)}
+              initial={{ opacity: 0, x: -12 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: navLinks.length * 0.05 }}
+              className="block px-6 py-3 text-sm text-white/60 hover:text-white border-b border-white/[0.06] cursor-none"
+            >
+              Download Resume
+            </motion.a>
+            <motion.a
+              href="mailto:vishalsharma952877@gmail.com"
+              onClick={() => setMenuOpen(false)}
+              initial={{ opacity: 0, x: -12 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: (navLinks.length + 1) * 0.05 }}
+              className="block px-6 py-3 text-sm text-white/60 hover:text-white cursor-none"
+            >
+              Hire Me
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
