@@ -3,15 +3,6 @@ import { motion, useInView } from 'framer-motion';
 
 const projects = [
   {
-    title: 'MiniTube',
-    description:
-      'MiniTube is a modern backend system designed for a content-sharing and community interaction platform where users can create, publish, and engage with multimedia content in multiple ways.',
-    tech: ['Node.js', 'MongoDB', 'Express'],
-    gradient: 'from-red-600/20 to-pink-900/20',
-    accent: '#ef4444',
-    github: 'https://github.com/Vishal-Sharma-6033/MiniTube.git',
-  },
-  {
     title: 'Retail Price Comparison Bot',
     description:
       'A full-stack MERN application that helps users find the best prices for products across local shops.',
@@ -19,6 +10,15 @@ const projects = [
     gradient: 'from-green-600/20 to-emerald-900/20',
     accent: '#22c55e',
     github: 'https://github.com/Vishal-Sharma-6033/Retail_price_comparison_bot.git',
+  },
+  {
+    title: 'MiniTube',
+    description:
+      'MiniTube is a modern backend system designed for a content-sharing and community interaction platform where users can create, publish, and engage with multimedia content in multiple ways.',
+    tech: ['Node.js', 'MongoDB', 'Express'],
+    gradient: 'from-red-600/20 to-pink-900/20',
+    accent: '#ef4444',
+    github: 'https://github.com/Vishal-Sharma-6033/MiniTube.git',
   },
   {
     title: 'SmartCampus ERP',
@@ -30,13 +30,13 @@ const projects = [
     github: 'https://github.com/Vishal-Sharma-6033/SmartCampusERP.git',
   },
   {
-    title: 'Telegram Cloud Vault',
+    title: 'DPI Engine - Deep Packet Inspection System',
     description:
-      'A cloud storage application built using Telegram Bot API, allowing users to securely upload, store, and retrieve files using Telegram’s file_id system. Implemented with React frontend and Express backend for seamless file management and fast access.',
-    tech: ['Node.js', 'Telegram Bot API', 'Cloud Storage'],
+      'Deep Packet Inspection (DPI) is a technology used to examine the contents of network packets as they pass through a checkpoint. Unlike simple firewalls that only look at packet headers (source/destination IP), DPI looks inside the packet payload',
+    tech: ['C++', 'PCAP Processing', 'Multi-threading', 'Network Protocol Parsing', 'TLS/SNI Inspection', 'Flow Tracking (Five-Tuple)'],
     gradient: 'from-blue-600/20 to-indigo-900/20',
     accent: '#3b82f6',
-    github: 'https://github.com/Vishal-Sharma-6033/telegram-cloud-vault.git',
+    github: 'https://github.com/Vishal-Sharma-6033/DPI-Engine---Deep-Packet-Inspection-System.git',
   }
 ];
 

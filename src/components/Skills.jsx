@@ -4,7 +4,7 @@ import { motion, useInView } from 'framer-motion';
 const skills = [
   { category: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js'] },
   { category: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'Redis' ] },
-  { category: 'Database', items: ['MongoDB', 'Firebase'] },
+  { category: 'Database', items: ['MongoDB'] },
   { category: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Vite', 'Postman'] },
 ];
 
@@ -25,8 +25,8 @@ function SkillBar({ name, level, delay }) {
   return (
     <div ref={ref} className="mb-5">
       <div className="flex justify-between mb-2">
-        <span className="text-sm text-white/70 font-medium">{name}</span>
-        <span className="text-xs text-violet-400 font-mono">{level}%</span>
+        <span className="text-sm font-medium text-white/70">{name}</span>
+        <span className="font-mono text-xs text-violet-400">{level}%</span>
       </div>
       <div className="h-[3px] bg-white/[0.06] rounded-full overflow-hidden">
         <motion.div
@@ -45,7 +45,7 @@ export default function Skills() {
   const titleInView = useInView(titleRef, { once: true, margin: '-60px' });
 
   return (
-    <section id="skills" className="relative py-32 px-6 overflow-hidden">
+    <section id="skills" className="relative px-6 py-32 overflow-hidden">
       {/* Blobs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-violet-600/5 blur-3xl rounded-full pointer-events-none" />
 
@@ -56,27 +56,27 @@ export default function Skills() {
           initial={{ opacity: 0, y: 40 }}
           animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center mb-16"
+          className="mb-16 text-center"
         >
           <p className="text-xs tracking-[0.35em] uppercase text-violet-400 mb-4 font-medium">
             Skills
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-white md:text-5xl">
             My <span className="text-gradient">Tech Stack</span>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid gap-12 md:grid-cols-2">
           {/* Skill Bars */}
           <div>
-            <p className="text-xs tracking-widest uppercase text-white/30 mb-8">Proficiency</p>
+            <p className="mb-8 text-xs tracking-widest uppercase text-white/30">Proficiency</p>
             {featured.map((sk, i) => (
               <SkillBar key={sk.name} name={sk.name} level={sk.level} delay={i * 0.08} />
             ))}
           </div>
 
           {/* Category grid */}
-          <div className="grid grid-cols-2 gap-4 content-start">
+          <div className="grid content-start grid-cols-2 gap-4">
             {skills.map((cat, ci) => (
               <motion.div
                 key={cat.category}
@@ -84,9 +84,9 @@ export default function Skills() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ duration: 0.6, delay: ci * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="glass rounded-xl p-5 group hover:border-violet-500/30 transition-colors duration-300"
+                className="p-5 transition-colors duration-300 glass rounded-xl group hover:border-violet-500/30"
               >
-                <p className="text-xs uppercase tracking-widest text-violet-400 mb-3 font-semibold">
+                <p className="mb-3 text-xs font-semibold tracking-widest uppercase text-violet-400">
                   {cat.category}
                 </p>
                 <div className="flex flex-wrap gap-2">
