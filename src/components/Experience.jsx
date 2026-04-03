@@ -5,40 +5,27 @@ const events = [
   {
     year: '2024',
     title: 'Started Web Development',
-    desc: 'Began learning HTML, CSS, and JavaScript. Built small projects to understand core web development concepts, DOM manipulation, and responsive design.',
+    desc: 'Learned HTML, CSS, and JavaScript fundamentals. Built small projects to understand core concepts, DOM manipulation, and responsive design.',
     accent: '#7c3aed',
   },
   {
     year: '2024',
-    title: 'JavaScript Projects',
-    desc: 'Developed projects like Tic-Tac-Toe, Music Player, and Weather App, strengthening JavaScript logic, UI design, and frontend development fundamentals.',
+    title: 'Frontend Projects',
+    desc: 'Built projects like Tic-Tac-Toe, Music Player, and Weather App, improving JavaScript logic, UI design, and frontend development skills.',
     accent: '#3b82f6',
   },
   {
     year: '2025',
     title: 'MERN Stack Development',
-    desc: 'Learned MongoDB, Express.js, React.js, and Node.js. Built full-stack applications with authentication, REST APIs, and structured backend architecture.',
+    desc: 'Learned MongoDB, Express.js, React.js, and Node.js. Built full-stack apps with authentication, REST APIs, and backend integration.',
     accent: '#10b981',
   },
   {
-    year: '2025',
-    title: 'Backend & API Development',
-    desc: 'Focused on backend systems including JWT authentication, database schema design, API security, and scalable server-side architecture.',
-    accent: '#f97316',
-  },
-  {
-    year: '2025',
-    title: 'Full Stack Projects',
-    desc: 'Built real-world applications like MiniTube and SmartCampus ERP with role-based authentication, attendance systems, result management, and cloud storage integration.',
-    accent: '#6366f1',
-  },
-  {
     year: '2026',
-    title: 'Advanced Backend & Real-Time Systems',
-    desc: 'Exploring Socket.IO, real-time communication, scalable backend systems, payment integration, and building production-ready MERN applications.',
+    title: 'Advanced Backend & Real Projects',
+    desc: 'Working on real-world projects with JWT auth, APIs, and scalable backend systems. Exploring real-time features and production-ready development.',
     accent: '#ec4899',
   },
-
 ];
 
 function TimelineItem({ event, index }) {
