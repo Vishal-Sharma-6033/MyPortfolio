@@ -21,6 +21,15 @@ const projects = [
     github: 'https://github.com/Vishal-Sharma-6033/MiniTube.git',
   },
   {
+title: 'visStream - Real-Time Watch Platform',
+description:
+'A full-stack MERN application that enables synchronized video streaming, live chat, and WebRTC voice communication for remote watch parties.',
+tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'WebRTC', 'HLS.js', 'FFmpeg'],
+gradient: 'from-indigo-600/20 to-blue-900/20',
+accent: '#6366f1',
+github: 'https://github.com/Vishal-Sharma-6033/visStream.git',
+},
+  {
     title: 'SmartCampus ERP',
     description:
       'A comprehensive ERP system for educational institutions to manage students, attendance, exams, fees, and administrative operations in one platform.',
