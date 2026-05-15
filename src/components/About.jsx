@@ -32,20 +32,24 @@ export default function About() {
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-violet-600/20 to-transparent rounded-bl-full" />
 
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
-            Crafting digital experiences{' '}
-            <span className="text-gradient">that matter</span>
+            About <span className="text-gradient">Vishal Sharma</span>
           </h2>
 
           <p className="text-white/60 text-lg leading-relaxed mb-6">
-            I'm <span className="text-white font-semibold">Vishal Sharma</span>, a{' '}
-            <span className="text-violet-400 font-medium">MERN Stack Developer</span>{' '}
-            passionate about building real-world web applications with a razor-sharp
-            focus on UI/UX and performance.
+            Hi, I’m <span className="text-white font-semibold">Vishal Sharma</span>, a{' '}
+            passionate <span className="text-violet-400 font-medium">MERN Stack Developer</span>{' '}
+            focused on building scalable, real-time, and user-centric web applications.
+            I enjoy transforming complex problems into clean, efficient digital
+            experiences with modern UI/UX and high-performance backend systems.
           </p>
           <p className="text-white/50 leading-relaxed mb-8">
-            From clean, accessible interfaces to scalable backend systems — I enjoy
-            turning complex problems into elegant solutions. Every project is an
-            opportunity to learn, experiment, and ship something genuinely useful.
+            I specialize in developing full-stack applications using MongoDB, Express.js,
+            React.js, and Node.js, with hands-on experience in REST APIs, JWT Authentication,
+            Socket.IO, adaptive media streaming, and scalable architecture. From real-time
+            streaming platforms to smart local price-tracking systems, I love building
+            products that are practical, impactful, and performance-driven. Alongside
+            development, I continuously strengthen my problem-solving skills through Data
+            Structures & Algorithms in C++.
           </p>
 
           {/* Stats row */}
@@ -53,7 +57,7 @@ export default function About() {
             {[
               { label: 'Projects', value: '10+' },
               { label: 'Stack', value: 'MERN' },
-              { label: 'Focus', value: 'UI & Perf' },
+              { label: 'Focus', value: 'Real-Time Systems' },
             ].map((stat) => (
               <div
                 key={stat.label}
