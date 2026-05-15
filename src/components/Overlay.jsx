@@ -88,15 +88,7 @@ export default function Overlay() {
           <TypingName />
         </motion.h1>
 
-        <motion.div
-          className="flex justify-center gap-2 mt-6"
-          animate={{ x: [0, 8, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          <span className="w-8 h-[2px] bg-gradient-to-r from-violet-500 to-blue-500 rounded-full" />
-          <span className="w-3 h-[2px] bg-white/20 rounded-full" />
-          <span className="w-3 h-[2px] bg-white/20 rounded-full" />
-        </motion.div>
+        {/* Removed three-line indicator under the hero */}
       </motion.div>
     </div>
   );
