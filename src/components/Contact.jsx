@@ -1,10 +1,11 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/Vishal-Sharma-6033', icon: 'GH' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/vishal-sharma-a49603315/?skipRedirect=true', icon: 'LI' },
-  { label: 'Email', href: 'mailto:vishalsharma952877@gmail.com', icon: '@' },
+  { label: 'GitHub', href: 'https://github.com/Vishal-Sharma-6033', icon: FaGithub },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/vishal-sharma-a49603315/?skipRedirect=true', icon: FaLinkedin },
+  { label: 'Email', href: 'mailto:vishalsharma952877@gmail.com', icon: FaEnvelope },
 ];
 
 function MagneticButton({ children, href }) {
@@ -99,9 +100,11 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.08, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="glass w-12 h-12 rounded-xl flex items-center justify-center text-xs font-bold text-white/40 hover:text-white hover:border-violet-500/30 transition-colors cursor-none"
+                className="glass w-12 h-12 rounded-xl flex items-center justify-center text-white/55 hover:text-white hover:border-violet-500/30 transition-colors cursor-none"
+                aria-label={s.label}
+                title={s.label}
               >
-                {s.icon}
+                <s.icon className="text-lg" />
               </motion.a>
             ))}
           </div>
