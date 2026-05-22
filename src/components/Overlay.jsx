@@ -77,6 +77,33 @@ export default function Overlay() {
           <TypingName />
         </motion.h1>
 
+        <div className="mt-5 space-y-5 sm:hidden">
+          <div className="h-[2px] w-20 rounded-full bg-gradient-to-r from-violet-400 to-blue-400" />
+
+          <div className="flex items-start gap-4 text-left text-white/80">
+            <div className="flex min-w-[4.5rem] flex-col gap-2">
+              <span className="text-2xl leading-none text-gradient">&lt;/&gt;</span>
+              <div className="space-y-1">
+                <p className="text-[0.62rem] tracking-[0.34em] text-white/90">CREATIVE</p>
+                <p className="text-[0.62rem] tracking-[0.3em] text-white/55">DEVELOPER</p>
+              </div>
+            </div>
+
+            <div className="w-px h-12 bg-white/18" />
+
+            <p className="max-w-[12rem] text-[0.88rem] leading-[1.45] text-white/55">
+              I build digital experiences that are fast, modern and impactful.
+            </p>
+          </div>
+
+          <a
+            href="#projects"
+            className="pointer-events-auto inline-flex items-center justify-center rounded-xl border border-violet-400/50 px-5 py-3 text-sm font-semibold tracking-[0.2em] text-violet-200 shadow-[0_0_0_1px_rgba(167,139,250,0.08)]"
+          >
+            VIEW WORK <span className="ml-3 text-lg">→</span>
+          </a>
+        </div>
+
         <motion.div
           className="items-start hidden gap-4 mt-6 text-left text-white/80 sm:flex sm:mt-10 sm:gap-8"
           initial={{ opacity: 0, y: 12 }}
@@ -101,6 +128,21 @@ export default function Overlay() {
             </div>
           </div> */}
         </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-8 left-4 sm:hidden"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <div className="flex flex-col items-center gap-3 text-white/30">
+          <div className="w-px h-10 bg-gradient-to-b from-violet-400 to-transparent" />
+          <span className="[writing-mode:vertical-rl] rotate-180 text-[0.65rem] tracking-[0.45em]">
+            SCROLL DOWN
+          </span>
+          <span className="text-lg leading-none text-white/50">↓</span>
+        </div>
       </motion.div>
     </div>
   );
