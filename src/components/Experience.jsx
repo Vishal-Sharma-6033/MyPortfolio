@@ -3,28 +3,16 @@ import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 
 const events = [
   {
-    year: '2024',
-    title: 'Started Web Development',
-    desc: 'Learned HTML, CSS, and JavaScript fundamentals. Built small projects to understand core concepts, DOM manipulation, and responsive design.',
-    accent: '#7c3aed',
+    year: '2025 (2 months)',
+    title: 'Full Stack Web Development Intern — Unified Mentor',
+    desc: 'Completed hands-on internship developing and deploying full-stack web applications. Executed test cases, reported bugs, and maintained project documentation throughout the development cycle.',
+    accent: '#f59e0b',
   },
   {
-    year: '2024',
-    title: 'Frontend Projects',
-    desc: 'Built projects like Tic-Tac-Toe, Music Player, and Weather App, improving JavaScript logic, UI design, and frontend development skills.',
-    accent: '#3b82f6',
-  },
-  {
-    year: '2025',
-    title: 'MERN Stack Development',
-    desc: 'Learned MongoDB, Express.js, React.js, and Node.js. Built full-stack apps with authentication, REST APIs, and backend integration.',
-    accent: '#10b981',
-  },
-  {
-    year: '2026',
-    title: 'Advanced Backend & Real Projects',
-    desc: 'Working on real-world projects with JWT auth, APIs, and scalable backend systems. Exploring real-time features and production-ready development.',
-    accent: '#ec4899',
+    year: '2026 – Present',
+    title: 'MERN Stack Developer Intern — ElevanceSkills',
+    desc: 'Working on full-stack MERN projects, applying REST API design and real-time communication using Socket.IO. Documenting technical workflows and collaborating with cross-functional engineering teams.',
+    accent: '#8b5cf6',
   },
 ];
 
