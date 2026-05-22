@@ -93,13 +93,13 @@ export default function Overlay() {
 
           <div className="h-[4.5rem] w-px bg-white/18" />
 
-          <div className="flex min-w-[8rem] flex-col gap-3">
+          {/* <div className="flex min-w-[8rem] flex-col gap-3">
             <span className="text-4xl leading-none text-gradient">◌</span>
             <div className="space-y-1">
               <p className="text-[0.82rem] tracking-[0.4em] text-white/88">CREATIVE</p>
               <p className="text-[0.82rem] tracking-[0.35em] text-white/55">DEVELOPER</p>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       </motion.div>
     </div>
