@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { TiThMenu } from 'react-icons/ti';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -78,21 +79,16 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden w-8 h-8 flex flex-col justify-center gap-1.5 cursor-none"
+          className="md:hidden flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-black/20 text-white/70 cursor-none"
           aria-label="Toggle menu"
         >
           <motion.span
-            animate={menuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-            className="w-full h-[1px] bg-white/60 block"
-          />
-          <motion.span
-            animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="w-full h-[1px] bg-white/60 block"
-          />
-          <motion.span
-            animate={menuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-            className="w-full h-[1px] bg-white/60 block"
-          />
+            animate={menuOpen ? { rotate: 90, scale: 1.05 } : { rotate: 0, scale: 1 }}
+            transition={{ duration: 0.25 }}
+            className="text-2xl leading-none"
+          >
+            <TiThMenu />
+          </motion.span>
         </button>
       </div>
 
