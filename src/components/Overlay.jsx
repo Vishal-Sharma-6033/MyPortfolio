@@ -66,32 +66,32 @@ export default function Overlay() {
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/20 via-transparent to-black/45" />
 
       <motion.div
-        className="absolute left-[5%] top-[16%] max-w-[42rem] px-4 sm:px-0 md:left-[4.5%] md:top-[42%] md:-translate-y-1/2"
+        className="absolute left-4 right-4 top-[calc(18%-1cm)] max-w-none px-0 sm:left-[5%] sm:right-auto sm:top-[16%] sm:max-w-[42rem] md:left-[4.5%] md:top-[42%] md:-translate-y-1/2"
         initial={{ opacity: 0, x: -24 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
         <motion.h1
-          className="flex flex-col text-left text-[clamp(4rem,10vw,8.5rem)] font-black leading-[0.82] tracking-[-0.05em] drop-shadow-[0_8px_28px_rgba(0,0,0,0.35)]"
+          className="flex flex-col text-left text-[clamp(2.8rem,15vw,8.5rem)] font-black leading-[0.82] tracking-[-0.05em] drop-shadow-[0_8px_28px_rgba(0,0,0,0.35)] sm:text-[clamp(4rem,10vw,8.5rem)]"
         >
           <TypingName />
         </motion.h1>
 
         <motion.div
-          className="flex items-start gap-8 mt-10 text-left text-white/80"
+          className="items-start hidden gap-4 mt-6 text-left text-white/80 sm:flex sm:mt-10 sm:gap-8"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          <div className="flex min-w-[8rem] flex-col gap-3">
-            <span className="text-4xl leading-none text-gradient">&lt;/&gt;</span>
+          <div className="flex min-w-[6.5rem] flex-col gap-2 sm:min-w-[8rem] sm:gap-3">
+            <span className="text-3xl leading-none text-gradient sm:text-4xl">&lt;/&gt;</span>
             <div className="space-y-1">
-              <p className="text-[0.82rem] tracking-[0.4em] text-white/88">CREATIVE</p>
-              <p className="text-[0.82rem] tracking-[0.35em] text-white/55">DEVELOPER</p>
+              <p className="text-[0.7rem] tracking-[0.3em] text-white/88 sm:text-[0.82rem] sm:tracking-[0.4em]">CREATIVE</p>
+              <p className="text-[0.7rem] tracking-[0.28em] text-white/55 sm:text-[0.82rem] sm:tracking-[0.35em]">DEVELOPER</p>
             </div>
           </div>
 
-          <div className="h-[4.5rem] w-px bg-white/18" />
+          <div className="hidden h-[4.5rem] w-px bg-white/18 sm:block" />
 
           {/* <div className="flex min-w-[8rem] flex-col gap-3">
             <span className="text-4xl leading-none text-gradient">◌</span>
