@@ -131,7 +131,7 @@ export default function Overlay() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-8 left-4 sm:hidden"
+        className="absolute bottom-8 left-4 sm:left-auto sm:right-6 md:right-8 lg:right-10"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
