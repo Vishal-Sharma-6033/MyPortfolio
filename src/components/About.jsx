@@ -53,7 +53,7 @@ export default function About() {
           </p>
 
           {/* Stats row */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {[
               { label: 'Projects', value: '10+' },
               { label: 'Stack', value: 'MERN' },
@@ -63,8 +63,10 @@ export default function About() {
                 key={stat.label}
                 className="text-center py-4 rounded-xl bg-white/[0.03] border border-white/[0.06]"
               >
-                <div className="text-2xl font-bold text-gradient">{stat.value}</div>
-                <div className="text-xs text-white/30 mt-1 uppercase tracking-widest">
+                <div className="text-xl sm:text-2xl font-bold text-gradient leading-tight">
+                  {stat.value}
+                </div>
+                <div className="text-[0.7rem] sm:text-xs text-white/30 mt-1 uppercase tracking-[0.18em] sm:tracking-widest">
                   {stat.label}
                 </div>
               </div>

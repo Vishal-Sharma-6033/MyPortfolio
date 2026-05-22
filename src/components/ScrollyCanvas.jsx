@@ -4,14 +4,18 @@ const FRAME_PATH = (n) =>
 
 export default function ScrollyCanvas() {
   // Use a single static hero image from the Vite `public/` folder
-  const lastFrameSrc = '/Hero.png';
-
   return (
     <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#121212]">
       <img
-        src={lastFrameSrc}
+        src="/phone.jpg"
+        alt="Mobile hero background"
+        className="absolute inset-0 h-full w-full object-cover md:hidden"
+        draggable="false"
+      />
+      <img
+        src="/Hero.png"
         alt="Hero background"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 hidden h-full w-full object-cover md:block"
         draggable="false"
       />
     </div>
