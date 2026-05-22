@@ -104,7 +104,8 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden mx-6 mt-2 glass rounded-xl overflow-hidden"
+            className="md:hidden mx-6 mt-2 overflow-hidden rounded-[20px] border border-white/10 bg-black/55 shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+            style={{ backdropFilter: 'blur(40px) saturate(140%)', WebkitBackdropFilter: 'blur(40px) saturate(140%)' }}
           >
             {navLinks.map((link, i) => (
               <motion.a
