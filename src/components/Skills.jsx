@@ -3,8 +3,8 @@ import { motion, useInView } from 'framer-motion';
 
 const skills = [
   { category: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js'] },
-  { category: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs', 'Redis' ] },
-  { category: 'Database', items: ['MongoDB'] },
+  { category: 'Backend', items: ['Node.js', 'Express.js', 'Redis', 'REST APIs', 'System Design'] },
+  { category: 'Database & Cloud', items: ['MongoDB', 'Docker', 'AWS Deployment', 'CI/CD Pipelines'] },
   { category: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Vite', 'Postman'] },
 ];
 
