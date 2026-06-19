@@ -55,7 +55,7 @@ export default function About() {
           {/* Stats row */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             {[
-              { label: 'Projects', value: '10+' },
+              { label: 'Projects', value: '6+' },
               { label: 'Stack', value: 'MERN' },
               { label: 'Focus', value: 'Real-Time Systems' },
             ].map((stat) => (

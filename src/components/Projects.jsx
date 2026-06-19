@@ -3,6 +3,26 @@ import { motion, useInView } from 'framer-motion';
 
 const projects = [
   {
+title: 'GeniusPilot – AI Interview Preparation',
+description:
+'An AI-powered interview preparation platform featuring resume analysis, job description matching, AI mock interviews, personalized learning roadmaps, and subscription-based access.',
+tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Redis', 'OpenAI', 'Razorpay'],
+gradient: 'from-blue-600/20 to-indigo-900/20',
+accent: '#3b82f6',
+github: 'https://github.com/Vishal-Sharma-6033/GP-GeniusPilot.git',
+},
+
+{
+title: 'AI Document Insights Platform',
+description:
+'A full-stack RAG platform that enables users to upload PDFs, generate vector embeddings, chat with documents, and receive AI-powered summaries using semantic search.',
+tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redis', 'Pinecone', 'LangChain', 'Docker'],
+gradient: 'from-purple-600/20 to-violet-900/20',
+accent: '#8b5cf6',
+github: 'https://github.com/Vishal-Sharma-6033/AI-Smart-Document-Insights-Platform.git',
+},
+
+  {
     title: 'Retail Price Comparison Bot',
     description:
       'A full-stack MERN application that helps users find the best prices for products across local shops.',
@@ -11,24 +31,6 @@ const projects = [
     accent: '#22c55e',
     github: 'https://github.com/Vishal-Sharma-6033/Retail_price_comparison_bot.git',
   },
-  {
-    title: 'MiniTube',
-    description:
-      'MiniTube is a modern backend system designed for a content-sharing and community interaction platform where users can create, publish, and engage with multimedia content in multiple ways.',
-    tech: ['Node.js', 'MongoDB', 'Express'],
-    gradient: 'from-red-600/20 to-pink-900/20',
-    accent: '#ef4444',
-    github: 'https://github.com/Vishal-Sharma-6033/MiniTube.git',
-  },
-  {
-title: 'visStream - Real-Time Watch Platform',
-description:
-'A full-stack MERN application that enables synchronized video streaming, live chat, and WebRTC voice communication for remote watch parties.',
-tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'WebRTC', 'HLS.js', 'FFmpeg'],
-gradient: 'from-indigo-600/20 to-blue-900/20',
-accent: '#6366f1',
-github: 'https://github.com/Vishal-Sharma-6033/visStream.git',
-},
   {
     title: 'SmartCampus ERP',
     description:
