@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import ScrollProgress from './components/ScrollProgress'
 import ScrollyCanvas from './components/ScrollyCanvas'
 import Skills from './components/Skills'
+import Websites from './components/Websites'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Websites />
         <GitHub />
         <Experience />
         <Contact />
